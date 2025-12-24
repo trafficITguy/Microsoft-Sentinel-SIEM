@@ -9,7 +9,6 @@ This project was designed to demonstrate practical experience with SIEM implemen
 
 ### Skills Learned
 
-
 - Practical implementation and operation of Microsoft Sentinel as a SIEM platform.
 - Log ingestion and normalization using Azure Log Analytics.
 - Writing and tuning KQL queries to detect suspicious authentication and security events.
@@ -19,7 +18,6 @@ This project was designed to demonstrate practical experience with SIEM implemen
 - Understanding of cloud based security monitoring and identity focused detections.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
 - Microsoft Sentinel for SIEM monitoring, detection, and incident management.
 - Azure Log Analytics Workspace for centralized log storage and querying.
@@ -49,3 +47,9 @@ Investigated alerts using Sentinel’s investigation tools, entity relationships
 
 Ref 7: Workbooks and Dashboards
 Created workbooks for visualizing log patterns, alert trends, and key security metrics. Used workbooks as operational tools to monitor ongoing SOC telemetry.
+
+Outcome:
+
+- Demonstrated end to end SOC Tier 1 workflow using Microsoft Sentinel.
+- Improved alert fidelity through rule tuning.
+- Strengthened familiarity with cloud based SIEM operations and identity focused detections.
