@@ -36,6 +36,23 @@ Configured multiple data connectors including Azure AD sign in logs, Defender fo
 Ref 3: Log Normalization and Query Building
 Utilized KQL to analyze ingested data, identify failed sign in attempts, unusual network activity, and other anomalies. Built custom detection queries based on SIEM best practices.
 
+EXAMPLE KQL Queries:
+
+Failed Sign In Detection
+SigninLogs
+| where ResultType != 0
+| summarize FailedAttempts = count() by UserPrincipalName, IPAddress
+| where FailedAttempts > 5
+
+SigninLogs
+| summarize LoginCount = count() by UserPrincipalName, IPAddress
+| where LoginCount > 10
+
+AuditLogs
+| where OperationName contains "Add" or OperationName contains "Update"
+| project TimeGenerated, InitiatedBy, TargetResources
+
+
 Ref 4: Analytics Rule Creation and Tuning
 Created custom analytics rules in Sentinel to generate alerts from suspicious activity patterns. Tuned rule thresholds to balance detection coverage and false positive reduction.
 
