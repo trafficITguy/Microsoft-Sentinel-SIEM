@@ -1,7 +1,6 @@
 # Microsoft Sentinel SIEM Project
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
 The Microsoft Sentinel SIEM project focused on deploying and configuring a cloud based SIEM to simulate real world Security Operations Center monitoring and detection activities. The objective was to ingest security telemetry from multiple sources, analyze logs using Kusto Query Language, generate actionable alerts, and perform Tier 1 SOC style investigations to identify and respond to suspicious activity.
 
